@@ -1,0 +1,38 @@
+<% layout("/layouts/boilerplate") %>
+<body>
+    <div class="row">
+        <div class="col-8 offset-2 ">
+            <br>
+            <h2>create new listings</h2>
+            <form action="/listings" method="post">
+                <div class="mb-3">
+                    <label for="name" class="form-label">name</label>
+                    <input type="text" placeholder="Add a name" name="foodItems[name]" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="foodItems[description]" class="form-label">description</label>
+                    <textarea type="text" placeholder="enter description" name="foodItems[description]" class="form-control"></textarea>    
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label">image URL</label>
+                    <input type="text" placeholder="enter image URL" name="foodItems[image]" class="form-control">
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-4">
+                        <label for="price" class="form-label">price</label>
+                        <input type="number" placeholder="1299" class="form-control" name="foodItems[price]">
+                    </div>
+                    <div class="mb-3 col-md-8">
+                        <label for="category" class="form-label">category</label>
+                        <input type="text" placeholder="indian" name="foodItems[category]" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="availability" class="form-label">availability</label>
+                    <input type="text" placeholder="In Stock" name="foodItems[availability]" class="form-control">
+                </div>
+                <button class="btn btn-dark mb-3 add-btn">add</button>
+            </form>
+        </div>
+    </div>
+</body>

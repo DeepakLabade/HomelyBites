@@ -1,0 +1,25 @@
+<% layout("/layouts/boilerplate") %>
+<div class="row">
+    <div class="col-8 offset-3">
+        <h2> <%= Chef.kitchenName %></h2>
+    </div>
+    <div class="card col-6 offset-3 show-card">
+        <img src="<%= Chef.image %>" alt="" class="card img-top show-img">
+        <div class="card-body mb-3">
+            <p class="card-text"><b><%= Chef.kitchenName %></b> <br>
+                By <b><%= Chef.OwnerName %></b> <br>
+                <%= Chef.address %> <br>
+                <%= Chef.foodType %> <br>
+                having experience of <%= Chef.experience %> Years 
+            </p>
+        </div>
+        <div class="btns mb-3">
+            <form action="/admin/<%= Chef._id %>/approveChef" method="post" class="col-3">
+                <button class="btn btn-dark">approve</button>
+            </form>
+            <form action="/admin/<%= Chef._id %>/notApproveChef/?_method=DELETE" method="POST">
+                <button class="btn btn-dark">not Approve</button>
+            </form>
+        </div>
+    </div>
+</div>

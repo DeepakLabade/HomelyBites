@@ -1,0 +1,57 @@
+<% layout("/layouts/boilerplate") %>
+<body></body>
+    <div class="row">
+        <div class="col-8 offset-2 ">
+            <br>
+            <h2>Add new Chef</h2>
+            <form action="/listings/newChef" method="post">
+                <div class="mb-3">
+                    <label for="kitchenName" class="form-label" >add Kitchen Name</label>
+                    <input type="text" placeholder="Add a Kitchen Name" name="chef[kitchenName]" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="OwnerName" class="form-label" >add Owner Name</label>
+                    <input type="text" placeholder="Add a Owner Name" name="chef[OwnerName]" class="form-control">
+                </div>
+                <div class="row">
+                    <div class="mb-3 col-md-7">
+                        <label for="emailId" class="form-label" >add Email Id</label>
+                        <input type="text" placeholder="Add a Email Id" name="chef[emailId]" class="form-control">
+                    </div>
+                    <div class="mb-3 col-md-5">
+                        <label for="phoneNo" class="form-label" >add Phone No.</label>
+                        <input type="text" placeholder="Add a Phone No." name="chef[phoneNo]" class="form-control">
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="experience" class="form-label" >add experience(in Years)</label>
+                    <input type="text" placeholder="Add a experience" name="chef[experience]" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="image" class="form-label" >add image URL</label>
+                    <input type="text" placeholder="Add a image" name="chef[image]" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="address" class="form-label" >add address</label>
+                    <input type="text" placeholder="Add a address" name="chef[address]" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="city" class="form-label" >add city</label>
+                    <input type="text" placeholder="Add a city" name="chef[city]" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="state" class="form-label" >add State</label>
+                    <input type="text" placeholder="Add a State" name="chef[State]" class="form-control">
+                </div>
+                <div class="mb-3">
+                    <label for="foodType" class="form-label" >add foodType</label>
+                    <input type="text" placeholder="veg/non-veg/south-indian" name="chef[foodType]" class="form-control">
+                </div>
+                <p class="mb-3">for applying for the Chef in Homely Bites You have to agree our <a href="terms&conditions">terms and conditions</a></p>
+                <input type="checkbox" name="t&c" id="t&c" required>
+                <label for="t&c" class="mb-3">agree with terms and conditions</label><br>
+                <button class="btn btn-dark mb-3 add-btn">Register</button><!--  <p>after addinng this kitchen, first you have to add your first listing on your kitchen</p> -->
+            </form>
+        </div>
+    </div>
+</body>

@@ -1,0 +1,25 @@
+<nav class="navbar navbar-expand-md bg-body-light border-bottom sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/"><i class="fa-solid fa-utensils"></i></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <a class="nav-link" href="/">Home</a>
+          <a class="nav-link" href="/chef">all Listings</a>
+          <!-- <a class="nav-link" href="/listings/newChef">add new Chef</a> -->
+          <a class="nav-link" href="/listings/new">add new listings</a>
+          <!-- <a class="nav-link" href="/listings/chef">all Chefs</a> -->
+        </div>
+        <div class="navbar-nav ms-auto">
+          <% if(!currUser) { %>
+          <a href="/signup" class="nav-link">sign up</a>
+          <a href="/login" class="nav-link">login</a>
+          <% } %>
+          <% if(currUser) { %>
+          <a href="/logout" class="nav-link">logout</a>
+          <% } %>
+      </div>
+    </div>
+  </nav>

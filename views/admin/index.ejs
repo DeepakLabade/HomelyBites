@@ -1,0 +1,22 @@
+<% layout("/layouts/boilerplate") %>
+
+    <h1>Admin page</h1>
+    <div class="row row-cols-lg-3 row-cols-md-2 row-cols-sm-1">
+        <% for(chef of Chef) { %>
+            <a class="listing-link" href="/admin/chef/<%= chef._id %>">
+                <div class="card col">
+                    <img src="<%= chef.image %>" class="card-img-top" style="height: 20rem;" alt="">
+                    <div class="card-img-overlay">
+
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">
+                            <b><%= chef.kitchenName %></b>
+                            <br>
+                            <%= chef.address %>
+                        </p>
+                    </div>
+                </div>
+            </a>
+        <% } %> 
+    </div>
