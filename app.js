@@ -233,7 +233,7 @@ app.post("/admin", async(req, res) => {
 
 
 app.get("/admin/login", (req,res) => {
-    res.render("admin/login")
+    res.render("admin/login.ejs");
 })
 
 app.post("/admin/login", passport.authenticate("local", {failureRedirect: '/', failureFlash: false}), async (req, res) => {

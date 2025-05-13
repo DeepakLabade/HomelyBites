@@ -1,4 +1,4 @@
-body{
+body, html{
     font-family: "Plus Jakarta Sans", sans-serif !important;
     font-optical-sizing: auto !important;
     font-weight: 400 !important;
@@ -7,6 +7,8 @@ body{
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+    height: 100%;
+    margin: 0;
 }
 
 .container{
@@ -109,5 +111,14 @@ object-fit: cover;
 .show-card{
     padding-left: 0;
     padding-right: 0;
+}
+
+.background {
+    /* background-image: url('/images/homelybites.jpg') !important; */
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* background-color: black; */
 }
 
